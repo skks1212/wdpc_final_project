@@ -1,0 +1,73 @@
+<style>
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  border:.1rem solid rgba(0,0,0,.3);
+}
+
+.contact .row .map{
+  width:100%;
+  flex:1 1 40rem;
+}
+
+.contact .row form{
+  padding:2rem;
+  flex:1 1 40rem;
+}
+
+.contact .row form .inputBox{
+  position: relative;
+}
+
+.contact .row form .inputBox input, .contact .row form .inputBox textarea{
+  width:100%;
+  border-bottom: .1rem solid rgba(0,0,0,.3);
+  padding:1rem 0;
+  margin:1.5rem 0;
+  font-size: 1.7rem;
+  text-transform: none;
+  color:#333;
+}
+
+.contact .row form .inputBox textarea{
+  resize: none;
+  height:15rem;
+}
+
+.contact .row form .inputBox input:focus,
+.contact .row form .inputBox textarea:focus{
+  border-color: var(--green);
+}
+
+.contact .row form .inputBox label{
+  position: absolute;
+  top:2.3rem; left:0;
+  font-size: 1.7rem;
+}
+
+.contact .row form .inputBox input:focus ~ label,
+.contact .row form .inputBox textarea:focus ~ label,
+.contact .row form .inputBox input:valid ~ label,
+.contact .row form .inputBox textarea:valid ~ label{
+  top:-.1rem;
+  font-size: 1.5rem;
+  color:#666;
+}
+
+</style>
+<section class="contact" id="contact">
+
+    <h1 class="heading">get in touch</h1>
+    
+    <div class="row">
+    
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.895920873054!2d72.83196972644954!3d19.141670564195152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1621609263469!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    
+    <div>
+        Vasna - Bhayli Main Rd, Bhayli, Vadodara, Gujarat 391410        
+    </div>
+
+    
+    </div>
+    
+    </section>
