@@ -14,11 +14,24 @@
         </title>
     </head>
     <body class="bg-slate-900 text-white">
-        <div component="header"></div>
+        <div component="header" id="home"></div>
+        <a href="#home" id="top-btn" class="fixed right-20 bottom-20 bg-[#00E0C6] flex w-[50px] h-[50px] justify-center items-center z-10 rounded-full invisible opacity-0 transition">
+            <i class="far fa-chevron-up"></i>
+        </a>
         <div component="landing"></div>
         <div component="icon"></div>
         <div component="product"></div>
-        <div component="contact"></div> 
-        <div component="footer"></div>        
+        <div component="contact"></div>
+        <div component="footer"></div>
+        <script>
+            $(document).on("scroll", function(){
+                console.log($(this).scrollTop());
+                if($(this).scrollTop() > 200){
+                    $("#top-btn").css("visibility", "visible").css("opacity","1");
+                }else{
+                    $("#top-btn").removeAttr("style");
+                }
+            });
+        </script>
     </body>
 </html>
